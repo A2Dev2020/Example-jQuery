@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <input type="text" name="saisie"/>
+        <button onClick="addCarabistouille()">Ajouter</button>
+
+        <ul>
+            <li>Truc</li>
+            <li>Machin</li>
+            <li>Truc2</li>
+            <li>Bidule</li>
+        </ul>
+
+        
+
+        <script>
+
+            function addCarabistouille()
+            {
+                let saisie = $("input[name='saisie']").val()
+
+                $("ul").append("<li>" + saisie + "</li>")
+            }
+
+        </script>
+    
+
+    </body>
+</html>
